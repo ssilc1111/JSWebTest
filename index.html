@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is JavaScript Running?</title>
+    <script type="text/javascript" language="JavaScript">
+        window.onload = function (event) {
+            var javascriptActiveIndicator = document.getElementById("javascriptActiveIndicator");
+            javascriptActiveIndicator.innerText = "JavaScript is active.";
+            javascriptActiveIndicator.style.color = "green";
+        }
+    </script>
 </head>
 <body>
-    
+    <p id="javascriptActiveIndicator" style="color:red;">JavaScript is not active.</p>
 </body>
 </html>
